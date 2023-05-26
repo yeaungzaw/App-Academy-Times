@@ -1,0 +1,16 @@
+.search-modal {
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
+
+.search-modal--hidden {
+  display: none;
+}
+
+.search-modal__input {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  padding: .4em;
+}

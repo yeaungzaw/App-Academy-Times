@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    font-size: 12px;
+    padding: 10px;
+}

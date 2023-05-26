@@ -1,0 +1,93 @@
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "menu-and-search . buttons"
+                         "technologies technologies technologies"
+                         "date logo paper";
+}
+
+.masthead__menu-and-search {
+    grid-area: menu-and-search;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.masthead__actions {
+    grid-area: buttons;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.masthead__technologies {
+    grid-area: technologies;
+    display: flex;
+    justify-content: center;
+}
+
+.masthead__date {
+    grid-area: date;
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 12px;
+}
+
+.masthead__logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+
+.masthead__paper {
+    grid-area: paper;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 12px;
+}
+
+.fa {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.fa-newspaper {
+    margin-bottom: 1px;
+    margin-right: 2px;
+}
+
+.fa:hover {
+    background-color: #f7f7f5;
+}
+
+.html,
+.css,
+.js,
+.python {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    margin: 0 5px;
+}
+
+.masthead__technologies div {
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    border-bottom: none;
+    position: relative;
+    top: 1px;
+}

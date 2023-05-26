@@ -1,0 +1,64 @@
+.interest-bar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 3fr 1fr 1fr;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    gap: 15px;
+}
+
+.interest-bar img {
+    width: 65px;
+    height: 65px;
+    padding: 25px 0;
+}
+
+.interest-bar__story {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    margin-top: 12px;
+    border-right: 1px dotted #e2e2e2;
+
+}
+
+.interest-bar__title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.interest-bar__teaser {
+    font-size: 13px;
+}
+
+.interest-bar__temperature-container {
+    display: flex;
+    align-items: center;
+}
+
+.interest-bar__temperature {
+    font-weight: bold;
+}
+
+.interest-bar__stock-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interest-bar__stock-price > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 7px;
+    font-size: 13px;
+}
+
+.interest-bar__stock-price > div:last-child {
+    border-bottom: none;
+}
+
+.interest-bar__stock-price > div > p:nth-child(2) {
+    color: green;
+    font-weight: bold;
+}
